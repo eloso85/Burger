@@ -3,8 +3,8 @@ $("#bur-submit").on("click", function(event){
 
     var newBurger = {
         burger_name: $("#burgerEntry").val().trim(),
-        devoured: true
-    }
+        
+    };
 
     console.log(newBurger);
 
@@ -18,7 +18,7 @@ $.post("/api/new", newBurger)
     row.append("<p>" + newBurger.burger_name + "</p>")
 
     $("#cart").prepend(row);
-})
+});
 
 $("#burgerEntry").val("");
 
