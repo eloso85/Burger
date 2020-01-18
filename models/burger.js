@@ -1,8 +1,9 @@
 module.exports = (sequelize,DataTypes) =>{
-    const Model = sequelize.define('Burger',{
-        burger_name: DataTypes.STRINGS,
+    const Model = sequelize.define('burger',{
+        burger_name: DataTypes.STRING,
         devoured: DataTypes.BOOLEAN
     
        
     });
+    return Model;
 }
