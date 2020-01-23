@@ -42,5 +42,21 @@ module.exports = function(app) {
     });
 
   });
+  app.post("/api/eaten", function(req, res) {
+
+    console.log("Burgers");
+    console.log(req.body);
+
+    db.burger.create({
+      burger_name: req.body.burger_name,
+      devoured: req.body.devoured,
+      
+      //created_at: req.body.created_at
+    }).then(function(results) {
+      // `results` here would be the newly created chirp
+      res.end();
+    });
+
+  });
 
 };
