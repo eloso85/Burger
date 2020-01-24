@@ -29,9 +29,10 @@ $("#cart").on("click","button", function(event){
       var devourBurger = {
         burger_name:$(".burger"),
         devoured:true
-      }
+      };
       console.log(devourBurger);
-      $.post("/api/new", devourBurger)
+
+      $.post("/api/devoured", devourBurger)
 
  // var devourBurger = $(".burger").val().trim()
       

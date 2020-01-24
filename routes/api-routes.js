@@ -42,13 +42,13 @@ module.exports = function(app) {
     });
 
   });
-  app.post("/api/new", function(req, res) {
+  app.put("/api/devoured", function(req, res) {
 
     console.log("Burgers");
     console.log(req.body);
 
-    db.burger.create({
-      burger_name: req.body.burger_name,
+    db.burger.update({
+      
       devoured: req.body.devoured,
       
       //created_at: req.body.created_at
