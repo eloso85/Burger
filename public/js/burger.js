@@ -27,7 +27,7 @@ $("#burgerEntry").val("");
 $("#cart").on("click","button", function(event){
   event.preventDefault();
       var devourBurger = {
-        burger_name: $(".burger"),
+        burger_name:$(".burger"),
         devoured:true
       }
       console.log(devourBurger);
@@ -35,25 +35,25 @@ $("#cart").on("click","button", function(event){
 
  // var devourBurger = $(".burger").val().trim()
       
-  $.get("/api/all", function(data) {
+  // $.get("/api/all", function(data) {
 
-        if (data.length !== 0) {
+  //       if (data.length !== 0) {
       
-          for (var i = 0; i < data.length; i++) {
+  //         for (var i = 0; i < data.length; i++) {
       
-            var row = $("<div>");
-            row.addClass("eaten");
+  //           var row = $("<div>");
+  //           row.addClass("eaten");
       
-            row.append("<p>" + data[i].burger_name + "</p>");
+  //           row.append("<p>" + data[i].burger_name + "</p>");
             
       
-            $("#eaten").prepend(row);
+  //           $("#eaten").prepend(row);
       
-          }
+  //         }
       
-        }
-      console.log(data);
-      });
+  //       }
+  //     console.log(data);
+  //     });
 
   
 

@@ -42,7 +42,7 @@ module.exports = function(app) {
     });
 
   });
-  app.post("/api/eaten", function(req, res) {
+  app.post("/api/new", function(req, res) {
 
     console.log("Burgers");
     console.log(req.body);
