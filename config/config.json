@@ -23,7 +23,7 @@
     "dialect": "mysql",
     "operatorsAliases":{
      
-      "$gt": "Op.gt"
+      "Ob.not": "true"
      
     
     }
