@@ -32,7 +32,7 @@ $("#cart").on("click","button", function(event){
       };
       console.log(devourBurger);
 
-      $.post("/api/devoured", devourBurger)
+     // $.post("/api/devoured", devourBurger)
 
  // var devourBurger = $(".burger").val().trim()
       

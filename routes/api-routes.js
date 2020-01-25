@@ -42,21 +42,5 @@ module.exports = function(app) {
     });
 
   });
-  app.put("/api/devoured", function(req, res) {
-
-    console.log("Burgers");
-    console.log(req.body);
-
-    db.burger.update({
-      
-      devoured: req.body.devoured,
-      
-      //created_at: req.body.created_at
-    }).then(function(results) {
-      // `results` here would be the newly created chirp
-      res.end();
-    });
-
-  });
-
+ 
 };
