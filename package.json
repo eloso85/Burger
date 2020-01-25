@@ -1,5 +1,5 @@
 {
-  "name": "Burger",
+  "name": "burger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -25,7 +25,6 @@
     "url": "https://github.com/eloso85/Burger/issues"
   },
   "homepage": "https://github.com/eloso85/Burger#readme"
-  
-}
+  }
 
 
