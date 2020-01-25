@@ -21,7 +21,15 @@
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases":{
+     "$and": "Op.and",
+      "$or": "Op.or",
+      "$eq": "Op.eq",
+      "$gt": "Op.gt",
+      "$lt": "Op.lt",
+      "$lte": "Op.lte",
+      "$like": "Op.like"
     
+    }
   }
 }
